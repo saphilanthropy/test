@@ -2,7 +2,7 @@
 
 > **Status:** active
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack · Asana _(QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Asana · Google Drive _(QuickBooks not synced — re-auth required)_
 > **Primary domain(s):** matwproject.org.uk · matwprojectusa.org
 
 ## Profile
@@ -41,6 +41,15 @@
   - MATW Hire Corporate Gifts Officer — _Sarah Ali_
   - Get DSL for MATW UK + 2025 numbers — _Mehak Raza_ (was due 2026-05-26)
 - **Latest status update:** (no structured status update set on project)
+
+## Documents — Google Drive
+- _MATW USA Expansion Strategy_ (doc, modified 2026-06-11)
+- _MATW New Market Netherlands - CEO_ (doc, 2026-06-11) — new-market entry analysis, in active drafting
+- _MATW Philanthropy: Consolidated Targets and Reporting_ (sheet, modified 2026-06-11) — live KPI/reporting workbook
+- _MATW Major Gifts Operational Playbook_ (doc, modified 2026-06-05)
+- _MATW Stewardship-First Contact Policy_ (doc, modified 2026-06-05)
+- _MATW Programs Weekly Report – 2nd June 2026_ (PDF)
+- _MATW_Philanthropy_OrgReview_March2026_ · _MATW_SOR_Brief_ (docs)
 
 ## Financials — QuickBooks
 - _Not synced this run — QuickBooks token expired (re-authorization required)._

@@ -2,7 +2,7 @@
 
 > **Status:** prospective
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack _(Asana: no records · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Google Drive _(Asana: no records · QuickBooks not synced — re-auth required)_
 > **Primary domain(s):** shelterboxcanada.org
 
 ## Profile
@@ -29,6 +29,10 @@
 
 ## Projects & Tasks — Asana
 - _No records found._ (Action item exists in Slack to add ShelterBox to the SA deliverable tracker and replicate into Asana.)
+
+## Documents — Google Drive
+- _2026-06-04 - ShelterBox Islamic Philanthropy Audit_ (meeting notes) — the audit underpinning our pipeline & accreditation findings
+- _Notes - ShelterBox Islamic Philanthropy Audit_ (doc, 2026-06-04)
 
 ## Financials — QuickBooks
 - _Not synced this run — QuickBooks token expired (re-authorization required)._

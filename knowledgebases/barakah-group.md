@@ -2,7 +2,7 @@
 
 > **Status:** active (advisory / partner)
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Calendar _(Slack: no relevant records · Asana: none · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Calendar _(Slack: no relevant records · Asana: none · Drive: none · QuickBooks not synced — re-auth required)_
 > **Primary domain(s):** barakahgroup.com
 
 ## Profile

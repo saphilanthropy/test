@@ -2,7 +2,7 @@
 
 > **Status:** active
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack · Asana _(QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Asana · Google Drive _(QuickBooks not synced — re-auth required)_
 > **Primary domain(s):** zahratrust.com
 
 ## Profile
@@ -41,6 +41,13 @@
   - Companions of Zahra (sa) Brief & Asset List for Channels — _Manaksha Memon_
   - Email Benchmarking (The Zahra Trust) with Safa
 - **Latest status update:** (no structured status update set on project)
+
+## Documents — Google Drive
+- _Legacy_of_Zahra_Full_Programme_Plan_ (doc, modified 2026-05-26) — the legacy-giving program plan (soft launch in Safr)
+- _The Zahra Trust Weekly Status Call_ notes — weekly series, latest 2026-06-09 (incl. Gemini auto-notes)
+- _2026-06-04 - Footsteps of Zahra Sync_ (meeting notes)
+- _The Zahra Trust - Monthly Donor Caller Onboarding Handbook_ (doc, 2026-05-22)
+- _The Zahra Trust Organic Social Media Management: Best Practises Guide_ (doc, modified 2026-05-20)
 
 ## Financials — QuickBooks
 - _Not synced this run — QuickBooks token expired (re-authorization required)._

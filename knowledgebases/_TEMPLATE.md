@@ -8,7 +8,7 @@ Do not edit this template to add real client data — it is the blueprint only.
 
 > **Status:** {active | prospective | dormant | former}
 > **Last refreshed:** {YYYY-MM-DD}
-> **Sources synced:** Gmail · Slack · Asana · QuickBooks
+> **Sources synced:** Gmail · Slack · Asana · QuickBooks · Google Drive
 > **Primary domain(s):** {example.org}
 
 ## Profile
@@ -37,6 +37,10 @@ Do not edit this template to add real client data — it is the blueprint only.
 - **Open tasks:**
   - {task} — {assignee} — {due date}
 - **Latest status update:** {date} — {summary}
+
+## Documents — Google Drive
+- **Key documents:**
+  - _{title}_ ({type}, last modified {date}) — {1-line description}
 
 ## Financials — QuickBooks
 - **Customer record:** {present? id}
