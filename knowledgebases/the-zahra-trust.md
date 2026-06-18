@@ -2,7 +2,7 @@
 
 > **Status:** active
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack · Asana · Google Drive _(QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Asana · Google Drive
 > **Primary domain(s):** zahratrust.com
 
 ## Profile
@@ -48,9 +48,6 @@
 - _2026-06-04 - Footsteps of Zahra Sync_ (meeting notes)
 - _The Zahra Trust - Monthly Donor Caller Onboarding Handbook_ (doc, 2026-05-22)
 - _The Zahra Trust Organic Social Media Management: Best Practises Guide_ (doc, modified 2026-05-20)
-
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
 
 ## Open Items & Action Items
 - [ ] Share final legacy-giving plan with ARJ (soft launch in Safr)

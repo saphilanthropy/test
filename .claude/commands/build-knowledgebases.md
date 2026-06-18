@@ -1,5 +1,5 @@
 ---
-description: Build/refresh a markdown knowledgebase for each client from Gmail, Slack, Asana, QuickBooks & Google Drive
+description: Build/refresh a markdown knowledgebase for each client from Gmail, Slack, Asana & Google Drive
 ---
 
 # Build per-client knowledgebases
@@ -16,9 +16,8 @@ expected to run unattended on a schedule.
 1. **Gmail** — `mcp__Gmail__search_threads`, `mcp__Gmail__get_thread`
 2. **Slack** — `mcp__Slack__slack_search_public_and_private`, `slack_read_thread`, `slack_search_channels`
 3. **Asana** — `mcp__Asana__asana_typeahead_search`, `asana_search_tasks`, `asana_get_projects_for_workspace`, `asana_get_task`
-4. **QuickBooks** — `mcp__Intuit_QuickBooks__qbo_contact_search_customer`, `qbo_sales_get_invoices`, `qbo_accounting_get_ar_aging_detail`
-5. **Google Drive** — `mcp__Google_Drive__search_files`, `get_file_metadata`, `read_file_content`
-6. **Google Calendar** (for roster inference only) — `mcp__Google_Calendar__list_events`
+4. **Google Drive** — `mcp__Google_Drive__search_files`, `get_file_metadata`, `read_file_content`
+5. **Google Calendar** (for roster inference only) — `mcp__Google_Calendar__list_events`
 
 > If a tool's schema isn't loaded, load it first with `ToolSearch` using
 > `select:<tool_name>` before calling it.
@@ -50,8 +49,6 @@ For each client in the roster, collect (be efficient — summarize, don't dump):
   recent notable threads.
 - **Asana:** typeahead/search for the org & contacts; list active projects, open
   tasks (assignee + due), and the latest status update.
-- **QuickBooks:** look up the customer; capture outstanding balance, open/overdue
-  invoices, and recent payments.
 - **Google Drive:** search for the org name (and key contact names); list the most
   relevant documents — proposals, SOWs, reports, decks, briefs — with title, type,
   last-modified date, and a 1-line description. Read file contents only when the
@@ -68,9 +65,9 @@ section rather than omitting it.
   sources that actually returned data.
 - **Update in place**: if the file exists, preserve human-added notes under
   "Risks & Notes" and "Open Items" — merge, don't blow away. Refresh the
-  data-derived sections (Timeline, Gmail, Slack, Asana, Financials, Documents).
+  data-derived sections (Timeline, Gmail, Slack, Asana, Documents).
 - Regenerate `knowledgebases/INDEX.md`: a table of all clients with Status, Last
-  refreshed, outstanding AR, and # open action items.
+  refreshed, and # open action items.
 
 ## Step 4 — Commit, push, PR
 1. Commit to branch `claude/peaceful-brown-5n1dbr` with a message like
@@ -85,7 +82,7 @@ section rather than omitting it.
 - **Privacy:** these files contain sensitive client data. Keep them in this repo
   only; never send client data to any external service or post it in PR comments.
 - **No side effects:** this task is read-only against all external tools. Never
-  send emails/Slack messages, create Asana tasks, or modify QuickBooks records.
+  send emails/Slack messages, create Asana tasks, or modify any records.
 - **Be concise:** summarize. A knowledgebase is a briefing, not an archive dump.
 - **Idempotent:** running twice in a row should produce ~no diff beyond the
   refresh date and genuinely new activity.

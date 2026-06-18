@@ -2,7 +2,7 @@
 
 > **Status:** former
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Slack · Google Drive _(Gmail: no recent direct threads · Asana: no records · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Slack · Google Drive _(Gmail: no recent direct threads · Asana: no records)_
 > **Primary domain(s):** ummahsociety.ca
 
 ## Profile
@@ -27,9 +27,6 @@
 ## Documents — Google Drive
 - _Ummah Society Strategy & Creative Brief_ (doc, last modified 2025-03-29)
 - _Ummah Society -- SoW Notes_ (doc, 2025-08-08)
-
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
 
 ## Open Items & Action Items
 - _(none)_

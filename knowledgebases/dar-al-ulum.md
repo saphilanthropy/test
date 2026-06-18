@@ -2,7 +2,7 @@
 
 > **Status:** dormant (occasional contact; strategic for Zakat accreditation)
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack · Google Drive _(Asana: no records · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Google Drive _(Asana: no records)_
 > **Primary domain(s):** _unknown — confirm contact domain_
 
 ## Profile
@@ -28,9 +28,6 @@
 
 ## Documents — Google Drive
 - _2026-04-20 - SA Philanthropy X Dar Al Ulum_ (meeting notes)
-
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
 
 ## Open Items & Action Items
 - [ ] Schedule the Sheikh's call re WaterAid Zakat-accreditation requirements and documentation

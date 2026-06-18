@@ -2,7 +2,7 @@
 
 > **Status:** active
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack · Asana · Google Drive _(QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Asana · Google Drive
 > **Primary domain(s):** matwproject.org.uk · matwprojectusa.org
 
 ## Profile
@@ -50,9 +50,6 @@
 - _MATW Stewardship-First Contact Policy_ (doc, modified 2026-06-05)
 - _MATW Programs Weekly Report – 2nd June 2026_ (PDF)
 - _MATW_Philanthropy_OrgReview_March2026_ · _MATW_SOR_Brief_ (docs)
-
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
 
 ## Open Items & Action Items
 - [ ] Notify MJ & Farooq of the high-level donor upgrade (Manaksha)

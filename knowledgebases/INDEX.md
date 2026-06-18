@@ -4,12 +4,12 @@
 > **Last refreshed:** 2026-06-11 · Roster inferred from Gmail + Calendar + Slack + Asana + Drive.
 
 ## Active clients
-| Client | Last refreshed | Outstanding AR | Open actions |
-|--------|----------------|----------------|--------------|
-| [MATW Project](matw-project.md) | 2026-06-11 | _QB re-auth needed_ | 5 |
-| [The Zahra Trust](the-zahra-trust.md) | 2026-06-11 | _QB re-auth needed_ | 5 |
-| [WaterAid Canada](wateraid-canada.md) | 2026-06-11 | _QB re-auth needed_ | 5 |
-| [WWF Canada](wwf-canada.md) | 2026-06-11 | _QB re-auth needed_ | 3 |
+| Client | Last refreshed | Open actions |
+|--------|----------------|--------------|
+| [MATW Project](matw-project.md) | 2026-06-11 | 5 |
+| [The Zahra Trust](the-zahra-trust.md) | 2026-06-11 | 5 |
+| [WaterAid Canada](wateraid-canada.md) | 2026-06-11 | 5 |
+| [WWF Canada](wwf-canada.md) | 2026-06-11 | 3 |
 
 ## Prospects & partners
 | Org | Type | Last refreshed | Open actions |
@@ -33,7 +33,6 @@
 | [Call Center Guys](call-center-guys.md) | 2026-06-11 | 3 |
 
 ## Notes for next refresh
-- **QuickBooks not synced** — token expired (re-authorization required). All financial sections are placeholders; re-auth and re-run to populate AR/invoices/payments.
 - **Funder relationships are not client knowledgebases.** Orgs like Big Give, AMCF, SNF, ADF, Conrad N. Hilton, Waterloo Foundation, Semnani Family Foundation are *funders* being approached on behalf of clients (MATW/TZT) — they belong in the internal funder relationship tracker, not here.
 - **Vendors observed but not built:** Patch Design (Kim Phillips — direct-mail design; has an outstanding-invoices thread, May 2026), Troi Mailing Services. Add if vendor coverage is wanted.
 - **Thin contact data:** capture primary contact name/domain for HAPANI, Dar Al-Ulum, Al Abrar, M4C, Ummah Society, WaterAid on next refresh.

@@ -2,7 +2,7 @@
 
 > **Status:** active (advisory / partner)
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Calendar _(Slack: no relevant records · Asana: none · Drive: none · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Calendar _(Slack: no relevant records · Asana: none · Drive: none)_
 > **Primary domain(s):** barakahgroup.com
 
 ## Profile
@@ -27,9 +27,6 @@
 
 ## Projects & Tasks — Asana
 - _No records found._
-
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
 
 ## Open Items & Action Items
 - [ ] Confirm agenda and prep for the Jun 23 call with Nadeen / Barakah Group

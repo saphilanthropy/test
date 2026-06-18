@@ -2,7 +2,7 @@
 
 > **Status:** active (vendor / delivery partner)
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack · Google Drive _(Asana: none · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Google Drive _(Asana: none)_
 > **Primary domain(s):** callcenterguys.com
 
 ## Profile
@@ -37,9 +37,6 @@
 ## Documents — Google Drive
 - _SA Philanthropy X Call Center Guys_ (Gemini meeting notes, 2026-02-24)
 - _Call Center Strategy & Operations Framework_ (doc, modified 2026-03-31)
-
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
 
 ## Open Items & Action Items
 - [ ] Set up weekly training cadence with Zabin (coding fixes, gift-date hygiene, future-projects flag)

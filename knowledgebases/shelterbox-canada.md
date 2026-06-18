@@ -2,7 +2,7 @@
 
 > **Status:** prospective
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack · Google Drive _(Asana: no records · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Google Drive _(Asana: no records)_
 > **Primary domain(s):** shelterboxcanada.org
 
 ## Profile
@@ -34,12 +34,9 @@
 - _2026-06-04 - ShelterBox Islamic Philanthropy Audit_ (meeting notes) — the audit underpinning our pipeline & accreditation findings
 - _Notes - ShelterBox Islamic Philanthropy Audit_ (doc, 2026-06-04)
 
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
-
 ## Open Items & Action Items
 - [ ] Reschedule the Islamic Philanthropy pipeline & accreditation findings presentation
 - [ ] Add ShelterBox presentation to the SA deliverable tracker (and replicate into Asana)
 
 ## Risks & Notes
-- Early-stage prospect — no Asana project or QuickBooks record yet. Confirm scope before treating as an active client.
+- Early-stage prospect — no Asana project or formal engagement record yet. Confirm scope before treating as an active client.

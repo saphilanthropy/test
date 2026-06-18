@@ -6,7 +6,6 @@ built and refreshed from our connected tools and history:
 - **Gmail** — email threads, decisions, open replies
 - **Slack** — relevant channels and notable threads
 - **Asana** — active projects, open tasks, status updates
-- **QuickBooks** — customer record, outstanding AR, invoices, payments
 - **Google Drive** — key documents: proposals, SOWs, reports, decks, briefs
 
 The client roster is **inferred each run** from Gmail + Google Calendar activity

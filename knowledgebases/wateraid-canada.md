@@ -2,7 +2,7 @@
 
 > **Status:** active
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Slack · Asana · Google Drive _(Gmail: no recent direct threads · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Slack · Asana · Google Drive _(Gmail: no recent direct threads)_
 > **Primary domain(s):** _confirm — likely wateraid.org/ca_
 
 ## Profile

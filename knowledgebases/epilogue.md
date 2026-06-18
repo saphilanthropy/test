@@ -2,7 +2,7 @@
 
 > **Status:** prospective (partner/vendor evaluation)
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack _(Asana: no records · Drive: no records · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack _(Asana: no records · Drive: no records)_
 > **Primary domain(s):** epiloguewills.com
 
 ## Profile
@@ -32,9 +32,6 @@
 
 ## Documents — Google Drive
 - _No records found._
-
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
 
 ## Open Items & Action Items
 - [ ] Capture outcome/next steps from the Jun 11 meeting

@@ -2,7 +2,7 @@
 
 > **Status:** dormant (former campaign client)
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack _(Asana: no records · Drive: no direct records · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack _(Asana: no records · Drive: no direct records)_
 > **Primary domain(s):** _unknown — donation page at give.muslimi.com/al-abrar_
 
 ## Profile
@@ -26,9 +26,6 @@
 
 ## Documents — Google Drive
 - _No direct records found this run_ (deck lives in Canva).
-
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
 
 ## Open Items & Action Items
 - _(none)_

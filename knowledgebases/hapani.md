@@ -2,7 +2,7 @@
 
 > **Status:** dormant (engagement paused)
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack · Google Drive _(Asana: no records · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Google Drive _(Asana: no records)_
 > **Primary domain(s):** _unknown — confirm contact domain_
 
 ## Profile
@@ -29,9 +29,6 @@
 ## Documents — Google Drive
 - _HAPANI Social Posts Copy Doc_ (doc, last modified 2025-08-25)
 - _Hapani new strategy_ (doc, 2025-05) — linked in #hapani
-
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
 
 ## Open Items & Action Items
 - [ ] Decide whether to formally close out or re-engage; Fundraise Up reporting still flowing to us

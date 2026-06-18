@@ -2,7 +2,7 @@
 
 > **Status:** dormant (winding down)
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack · Google Drive _(Asana: residual references · QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Google Drive _(Asana: residual references)_
 > **Primary domain(s):** _unknown — confirm contact domain_
 
 ## Profile
@@ -29,9 +29,6 @@
 - _M4C Case for Support_ (doc, last modified 2025-06-13)
 - _M4C Lily Leadership Summit Corporate Sponsorship Plan_ (doc, 2025-05)
 - _20250613 - M4C Status Call - Live Notes_ · _M4C_ folder
-
-## Financials — QuickBooks
-- _Not synced this run — QuickBooks token expired (re-authorization required)._
 
 ## Open Items & Action Items
 - [ ] Complete removal of M4C grants from trackers (Manaksha)

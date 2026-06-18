@@ -2,7 +2,7 @@
 
 > **Status:** active
 > **Last refreshed:** 2026-06-11
-> **Sources synced:** Gmail · Slack · Asana · Google Drive _(QuickBooks not synced — re-auth required)_
+> **Sources synced:** Gmail · Slack · Asana · Google Drive
 > **Primary domain(s):** wwfcanada.org
 
 ## Profile
