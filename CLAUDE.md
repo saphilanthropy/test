@@ -1,7 +1,7 @@
 # Repository guide
 
 This repo maintains **per-client knowledgebases** synthesized from connected
-tools (Gmail, Slack, Asana, QuickBooks).
+tools (Gmail, Slack, Asana, Google Drive).
 
 ## Layout
 - `knowledgebases/` — one markdown file per client, plus `INDEX.md` and `_TEMPLATE.md`.
