@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
+  "name": "saphilanthropy-skills",
+  "owner": {
+    "name": "Sarah Ali Philanthropy"
+  },
+  "description": "Internal Claude Code plugin marketplace for Sarah Ali Philanthropy.",
+  "plugins": [
+    {
+      "name": "creative-strategy-skills",
+      "source": "./plugins/creative-strategy-skills",
+      "description": "Creative strategy skill stack: brand intake, review mining, messaging strategy, creative mechanics, visual formats, and hook writing for paid social.",
+      "version": "1.0.0",
+      "author": { "name": "motion-team" },
+      "repository": "https://github.com/motion-team/creative-strategy-skills",
+      "keywords": ["creative-strategy", "advertising", "hooks", "paid-social", "marketing"],
+      "defaultEnabled": true
+    }
+  ]
+}
