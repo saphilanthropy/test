@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "creative-strategy-skills",
+  "displayName": "Creative Strategy Skills",
+  "version": "1.0.0",
+  "description": "An 8-skill stack for building paid-social creative strategy: brand intake, review mining (VOC), messaging strategy, creative mechanics, visual formats, and hook writing.",
+  "author": { "name": "motion-team" },
+  "repository": "https://github.com/motion-team/creative-strategy-skills",
+  "license": "UNLICENSED",
+  "keywords": ["creative-strategy", "advertising", "hooks", "paid-social", "marketing"]
+}

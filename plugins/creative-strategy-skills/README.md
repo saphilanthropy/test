@@ -3,10 +3,38 @@
 A stack of 8 skills for building paid-social creative strategy — from brand
 research through messaging angles, concepts, formats, and hooks. Installed from
 [`motion-team/creative-strategy-skills`](https://github.com/motion-team/creative-strategy-skills)
-via `npx skills add`.
+via `npx skills add`, then packaged as a Claude Code plugin so the whole
+organization can use them.
 
-Real skill files live in this directory; `.claude/skills/` holds symlinks so
-Claude Code picks them up. `skills-lock.json` (repo root) pins the installed set.
+This directory is a Claude Code **plugin** (`creative-strategy-skills`),
+distributed through the marketplace defined at the repo root
+(`.claude-plugin/marketplace.json`, marketplace name `saphilanthropy-skills`).
+The skills live under `skills/<name>/SKILL.md` and are auto-discovered when the
+plugin is enabled. Skills are namespaced by the plugin — e.g.
+`/creative-strategy-skills:hook-writing`.
+
+## Using these org-wide
+
+The marketplace + plugin are auto-enabled for **this** repo via
+`.claude/settings.json` (`extraKnownMarketplaces` + `enabledPlugins`), so anyone
+who opens and trusts this repo gets the skills with no manual install.
+
+To make them available in **other** repos / for **other** teammates, either:
+
+- **Per teammate / project** — add the marketplace once and enable the plugin:
+  ```
+  /plugin marketplace add saphilanthropy/test
+  /plugin install creative-strategy-skills@saphilanthropy-skills
+  ```
+  (or copy the two settings keys above into that repo's `.claude/settings.json`).
+- **Org-wide, zero-touch** — an admin deploys a managed settings file
+  (`/etc/claude/managed-settings.json` on Linux,
+  `/Library/Preferences/claude-managed-settings.json` on macOS) containing the
+  same `extraKnownMarketplaces` + `enabledPlugins` entries. This force-enables
+  the plugin for every user on every repo.
+
+> The marketplace is sourced from GitHub (`saphilanthropy/test`), so it resolves
+> only after these files land on the repo's **default branch**.
 
 ## The skills
 

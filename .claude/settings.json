@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "saphilanthropy-skills": {
+      "source": {
+        "source": "github",
+        "repo": "saphilanthropy/test"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "creative-strategy-skills@saphilanthropy-skills": true
+  }
+}
