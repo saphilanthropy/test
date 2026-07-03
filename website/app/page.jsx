@@ -2,7 +2,6 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import QuickDonateBar from "../components/QuickDonateBar";
 import HeroSlider from "../components/HeroSlider";
-import Placeholder from "../components/Placeholder";
 import { urgentAppeals, getInvolved } from "../lib/siteData";
 
 function AnnouncementBar() {
@@ -37,7 +36,10 @@ function UrgentAppeals() {
         <div className="mt-6 grid grid-cols-1 gap-4 px-3 sm:grid-cols-2 lg:grid-cols-4">
           {urgentAppeals.map((a) => (
             <div key={a.title} className="flex flex-col bg-white shadow-lg">
-              <Placeholder label={a.title} className="h-[200px] w-full md:h-[240px]" />
+              <div className="img-hover-zoom overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={a.img} alt={a.title} className="h-[200px] w-full object-cover object-top transition-transform duration-500 hover:scale-105 md:h-[240px]" />
+              </div>
               <div className="flex flex-1 flex-col px-3 pb-4 pt-2 text-center">
                 <p className="flex items-center justify-center text-lg text-[#00a3da] xl:text-xl">{a.title}</p>
                 <p className="my-2 max-h-[78px] overflow-hidden text-sm text-stone-500">{a.desc}</p>
@@ -117,7 +119,10 @@ function GetInvolved() {
       <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-6">
         {getInvolved.map((g) => (
           <div key={g.title} className="flex flex-col bg-white shadow-lg">
-            <Placeholder label={g.title} className="h-[160px] w-full sm:h-[240px]" />
+            <div className="max-h-[300px] overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={g.img} alt={g.title} className="w-full object-cover" />
+            </div>
             <div className="mt-2 flex h-12 items-center justify-center px-2 text-center text-sm text-[#00A3DA] md:text-xl">
               {g.title}
             </div>

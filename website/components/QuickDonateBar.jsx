@@ -64,10 +64,9 @@ export default function QuickDonateBar() {
           </div>
 
           {/* Accepted cards */}
-          <div className="order-4 col-span-6 flex h-[42px] items-center justify-center gap-1 rounded-md bg-[#80ceff] px-3 lg:col-span-1">
-            {["VISA", "MC", "AMEX", "PAY"].map((c) => (
-              <span key={c} className="rounded bg-white px-1 text-[9px] font-bold text-[#093484]">{c}</span>
-            ))}
+          <div className="order-4 col-span-6 flex h-[42px] items-center justify-center rounded-md bg-[#80ceff] px-3 lg:col-span-1">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/assets/credit-cards.png" alt="Accepted payment cards" className="h-[20px] w-auto object-contain" />
           </div>
 
           {/* Quick donate */}

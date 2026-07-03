@@ -145,19 +145,21 @@ export default function Header() {
 }
 
 function Logo({ className = "" }) {
-  // Simple stand-in mark until the real logo-transparent.png is supplied.
-  return (
-    <span className={`flex items-center justify-center rounded-full bg-white/95 ${className}`} aria-label="MATW Project logo">
-      <span className="text-[13px] font-extrabold tracking-tight text-[#093484]">MATW</span>
-    </span>
-  );
+  // eslint-disable-next-line @next/next/no-img-element
+  return <img src="/assets/logo.png" alt="Muslim Charity MATW" className={`object-contain ${className}`} />;
 }
+
+const QUICK_ICONS = {
+  Zakat: "/assets/icon-zakat.png",
+  "Sudan Hot Meals": "/assets/icon-meal.png",
+};
 
 function QuickIcon({ label, big = false }) {
   const size = big ? "h-[52px] w-[52px]" : "h-[30px] w-[30px]";
   return (
     <li className={`flex ${big ? "h-24 flex-col" : "flex-col"} items-center justify-center border-l border-white/10 px-2 text-white`}>
-      <span className={`flex ${size} items-center justify-center rounded-full bg-white/20 text-[9px] font-bold`}>♥</span>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={QUICK_ICONS[label]} alt={label} className={`${size} rounded-full object-cover`} />
       <span className={`mt-1 max-w-[80px] text-center leading-tight ${big ? "text-[12px]" : "text-[10px]"}`}>{label}</span>
     </li>
   );

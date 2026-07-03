@@ -2,7 +2,6 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { heroSlides } from "../lib/siteData";
-import Placeholder from "./Placeholder";
 
 export default function HeroSlider() {
   const [index, setIndex] = useState(0);
@@ -25,9 +24,11 @@ export default function HeroSlider() {
           >
             {heroSlides.map((slide) => (
               <a key={slide.label} href={slide.href} className="w-full shrink-0 basis-full">
-                <Placeholder
-                  label={slide.label}
-                  className="h-[220px] w-full text-base sm:h-[320px] md:h-[420px]"
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={slide.img}
+                  alt={slide.label}
+                  className="h-[220px] w-full rounded-lg object-cover object-top sm:h-[320px] md:h-[420px]"
                 />
               </a>
             ))}

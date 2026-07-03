@@ -96,6 +96,12 @@ export const primaryMenus = [
 
 export const presetAmounts = ["$65", "$150", "$200", "$500"];
 
+export const A = "/assets"; // asset base path
+
+// The four Urgent-Appeals card photos are lazy-loaded from a CDN on the
+// original site, so they weren't in the saved _files folder. We map each card
+// to the matching hero image as a faithful stand-in until the exact photos are
+// supplied.
 export const urgentAppeals = [
   {
     title: "Pay your Zakat to Gaza",
@@ -103,6 +109,7 @@ export const urgentAppeals = [
     cta: "PAY YOUR ZAKAT TO GAZA",
     href: "/appeals/pay-your-zakat-to-gaza",
     donors: "41,122",
+    img: `${A}/hero-zakat.jpg`,
   },
   {
     title: "Sudan Emergency Appeal",
@@ -110,6 +117,7 @@ export const urgentAppeals = [
     cta: "DONATE NOW",
     href: "/sudan-crisis",
     donors: "32,353",
+    img: `${A}/hero-sudan.jpg`,
   },
   {
     title: "Gaza Still Starves",
@@ -117,6 +125,7 @@ export const urgentAppeals = [
     cta: "DONATE NOW",
     href: "/crisis-and-emergencies/palestine",
     donors: "41,122",
+    img: `${A}/hero-gaza-food-water.jpg`,
   },
   {
     title: "Build a Water Well in Gaza Fund",
@@ -124,23 +133,24 @@ export const urgentAppeals = [
     cta: "DONATE NOW",
     href: "/gaza-water-well",
     donors: "18,904",
+    img: `${A}/hero-water-aid.jpg`,
   },
 ];
 
 export const heroSlides = [
-  { label: "Gaza Food & Water Aid", href: "/gaza-food-water" },
-  { label: "Water Aid", href: "/water-aid" },
-  { label: "Sudan Crisis", href: "/sudan-crisis" },
-  { label: "Build a Masjid", href: "/sadaqah-jariyah/build-a-masjid" },
-  { label: "Orphans of the Ummah", href: "/orphans-of-ummah" },
-  { label: "Zakat", href: "/zakat" },
+  { label: "Gaza Food & Water Aid", href: "/gaza-food-water", img: `${A}/hero-gaza-food-water.jpg` },
+  { label: "Water Aid", href: "/water-aid", img: `${A}/hero-water-aid.jpg` },
+  { label: "Sudan Crisis", href: "/sudan-crisis", img: `${A}/hero-sudan.jpg` },
+  { label: "Build a Masjid", href: "/sadaqah-jariyah/build-a-masjid", img: `${A}/hero-masjid.jpg` },
+  { label: "Orphans of the Ummah", href: "/orphans-of-ummah", img: `${A}/hero-orphans.jpg` },
+  { label: "Zakat", href: "/zakat", img: `${A}/hero-zakat.jpg` },
 ];
 
 export const getInvolved = [
-  { title: "VIEW OUR REPORTS", cta: "LEARN MORE", href: "/annual-reports" },
-  { title: "VOLUNTEER WITH US", cta: "SIGN UP", href: "/volunteer" },
-  { title: "ALL APPEALS", cta: "VIEW ALL APPEALS", href: "/all-appeals" },
-  { title: "FOLLOW US ON INSTAGRAM", cta: "STAY CONNECTED", href: "https://www.instagram.com/matw_project/" },
+  { title: "VIEW OUR REPORTS", cta: "LEARN MORE", href: "/annual-reports", img: `${A}/get-reports.jpg` },
+  { title: "VOLUNTEER WITH US", cta: "SIGN UP", href: "/volunteer", img: `${A}/get-volunteer.jpg` },
+  { title: "ALL APPEALS", cta: "VIEW ALL APPEALS", href: "/all-appeals", img: `${A}/get-appeals.jpg` },
+  { title: "FOLLOW US ON INSTAGRAM", cta: "STAY CONNECTED", href: "https://www.instagram.com/matw_project/", img: `${A}/get-instagram.jpg` },
 ];
 
 export const footerColumns = [
@@ -194,10 +204,23 @@ export const footerColumns = [
 ];
 
 export const socialLinks = [
-  { label: "Facebook", href: "https://www.facebook.com/matwproject.US/" },
-  { label: "Instagram", href: "https://www.instagram.com/matw_projectamerica" },
-  { label: "TikTok", href: "https://www.tiktok.com/@matw_projectusa" },
-  { label: "YouTube", href: "https://www.youtube.com/@matw_projectamerica" },
+  { label: "Facebook", href: "https://www.facebook.com/matwproject.US/", icon: `${A}/social-facebook.svg` },
+  { label: "Instagram", href: "https://www.instagram.com/matw_projectamerica", icon: `${A}/social-instagram.svg` },
+  { label: "TikTok", href: "https://www.tiktok.com/@matw_projectusa", icon: `${A}/social-tiktok.svg` },
+  { label: "YouTube", href: "https://www.youtube.com/@matw_projectamerica", icon: `${A}/social-youtube.svg` },
+];
+
+export const paymentIcons = [
+  { label: "PayPal", src: `${A}/paypal.png` },
+  { label: "Visa", src: `${A}/visa.png` },
+  { label: "Mastercard", src: `${A}/master.png` },
+  { label: "Apple Pay", src: `${A}/apple-pay.png` },
+  { label: "Google Pay", src: `${A}/google-pay.png` },
+];
+
+export const trustBadges = [
+  { label: "100% Secure Checkout", src: `${A}/badge-secure.svg` },
+  { label: "We Protect Your Privacy", src: `${A}/badge-privacy.svg` },
 ];
 
 export const countrySites = [

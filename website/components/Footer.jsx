@@ -1,22 +1,24 @@
-import { footerColumns, socialLinks, countrySites } from "../lib/siteData";
+import { footerColumns, socialLinks, countrySites, paymentIcons, trustBadges } from "../lib/siteData";
 
 export default function Footer() {
   return (
     <footer>
       {/* Payment + trust strip */}
       <div className="mx-auto max-w-6xl px-4 pb-10 pt-4">
-        <div className="mx-auto grid max-w-2xl grid-cols-5 items-center gap-3">
-          {["PayPal", "VISA", "MASTER", "APPLE PAY", "G PAY"].map((p) => (
-            <div key={p} className="flex h-8 items-center justify-center rounded border border-stone-200 bg-white text-[10px] font-semibold text-stone-500">
-              {p}
-            </div>
+        <div className="mx-auto grid max-w-2xl grid-cols-5 items-center gap-4 px-4">
+          {paymentIcons.map((p) => (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img key={p.label} src={p.src} alt={p.label} className="h-auto w-full object-contain" />
           ))}
         </div>
         <div className="mt-6 flex justify-center gap-10">
-          {["100% Secure Checkout", "We Protect Your Privacy"].map((t) => (
-            <div key={t} className="flex flex-col items-center">
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-stone-200 bg-stone-50 text-green-700">✓</span>
-              <span className="mt-2 text-center text-sm font-medium text-stone-500">{t}</span>
+          {trustBadges.map((t) => (
+            <div key={t.label} className="flex flex-col items-center">
+              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-stone-200 bg-stone-50">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={t.src} alt={t.label} className="h-6 w-6 object-contain" />
+              </span>
+              <span className="mt-2 text-center text-sm font-medium text-stone-500">{t.label}</span>
             </div>
           ))}
         </div>
@@ -43,8 +45,9 @@ export default function Footer() {
             <p className="mb-2 text-[14px] font-semibold text-[#C6E9FF]">Join our social media</p>
             <div className="mb-6 flex items-center gap-5">
               {socialLinks.map((s) => (
-                <a key={s.label} href={s.href} aria-label={s.label} className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15 text-[10px] font-bold text-white hover:bg-white/25">
-                  {s.label[0]}
+                <a key={s.label} href={s.href} aria-label={s.label}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={s.icon} alt={s.label} className="h-8 w-8" />
                 </a>
               ))}
             </div>
@@ -64,6 +67,16 @@ export default function Footer() {
               </ul>
             </nav>
           </div>
+        </div>
+      </div>
+
+      {/* Policy + accepted-cards logos */}
+      <div className="matw-gradient px-4 pb-8">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-2 sm:items-start">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/assets/logo-policy.png" alt="MATW Project Policy Logos" className="h-[50px] w-auto" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/assets/logo-cards.png" alt="Accepted Cards" className="h-[35px] w-auto" />
         </div>
       </div>
 
