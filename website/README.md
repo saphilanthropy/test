@@ -50,9 +50,27 @@ Donate buttons use **Stripe Checkout** (hosted, PCI-compliant redirect):
    environment variables (e.g. Vercel → Project → Settings → Environment
    Variables) — not in a committed file.
 
-> Recommended next step: add a **Stripe webhook** (`checkout.session.completed`)
-> to record donations / send receipts server-side. Not required for payments to
-> work, but best practice for a production charity.
+### Webhook (records donations server-side)
+`app/api/webhook/route.js` verifies Stripe's signature and handles
+`checkout.session.completed` (one-time + first subscription payment) and
+`invoice.paid` (monthly renewals). It calls `recordDonation()` in
+`lib/donations.js`, which currently logs a structured record — swap that for a
+database write, receipt email, or CRM push.
+
+Set `STRIPE_WEBHOOK_SECRET` (see `.env.example`).
+
+**Test locally** with the Stripe CLI:
+```bash
+stripe login
+stripe listen --forward-to localhost:3000/api/webhook   # prints whsec_… → .env.local
+stripe trigger checkout.session.completed               # in another terminal
+```
+Watch the `[donation]` line appear in your dev server logs.
+
+**Production:** create the endpoint at
+https://dashboard.stripe.com/webhooks with URL `https://YOUR_DOMAIN/api/webhook`,
+subscribe to `checkout.session.completed` and `invoice.paid`, and copy its
+signing secret into your host's env vars.
 
 ## Run locally
 
