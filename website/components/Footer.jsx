@@ -1,6 +1,7 @@
-import { footerColumns, socialLinks, countrySites, paymentIcons, trustBadges } from "../lib/siteData";
+import { paymentIcons } from "../lib/siteData";
 
-export default function Footer() {
+export default function Footer({ content }) {
+  const f = content.footer;
   return (
     <footer>
       {/* Payment + trust strip */}
@@ -12,7 +13,7 @@ export default function Footer() {
           ))}
         </div>
         <div className="mt-6 flex justify-center gap-10">
-          {trustBadges.map((t) => (
+          {content.trust.badges.map((t) => (
             <div key={t.label} className="flex flex-col items-center">
               <span className="flex h-14 w-14 items-center justify-center rounded-full border border-stone-200 bg-stone-50">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -27,7 +28,7 @@ export default function Footer() {
       {/* Link columns */}
       <div className="matw-gradient px-2 py-8">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-2 sm:grid-cols-2 lg:grid-cols-4">
-          {footerColumns.map((col) => (
+          {f.columns.map((col) => (
             <div key={col.heading}>
               <h3 className="pb-3 pt-2 text-[20px] font-bold text-white">{col.heading}</h3>
               <ul className="flex flex-col">
@@ -40,28 +41,22 @@ export default function Footer() {
             </div>
           ))}
 
-          {/* Social + country switcher */}
           <div className="flex flex-col lg:col-span-1 sm:col-span-2">
-            <p className="mb-2 text-[14px] font-semibold text-[#C6E9FF]">Join our social media</p>
+            <p className="mb-2 text-[14px] font-semibold text-[#C6E9FF]">{f.socialHeading}</p>
             <div className="mb-6 flex items-center gap-5">
-              {socialLinks.map((s) => (
+              {f.social.map((s) => (
                 <a key={s.label} href={s.href} aria-label={s.label}>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={s.icon} alt={s.label} className="h-8 w-8" />
                 </a>
               ))}
             </div>
-            <span className="mb-2 font-medium text-white">Muslim Charity - (USA)</span>
+            <span className="mb-2 font-medium text-white">{f.countryHeading}</span>
             <nav className="pb-2">
               <ul className="divide-y divide-white/10">
-                {countrySites.map((c) => (
+                {f.countries.map((c) => (
                   <li key={c.label}>
-                    <a
-                      href={c.href}
-                      className={`block rounded-lg px-3 py-2 text-sm hover:bg-white/10 ${c.current ? "font-semibold text-white" : "text-white/90"}`}
-                    >
-                      {c.label}
-                    </a>
+                    <a href={c.href} className={`block rounded-lg px-3 py-2 text-sm hover:bg-white/10 ${c.current ? "font-semibold text-white" : "text-white/90"}`}>{c.label}</a>
                   </li>
                 ))}
               </ul>
@@ -82,10 +77,7 @@ export default function Footer() {
 
       {/* Copyright bar */}
       <div className="w-full bg-[#282828] px-4 py-6 lg:px-12">
-        <p className="text-center text-lg text-[#aaa]">
-          MATW PROJECT USA, A 501(C)(3) ORGANIZATION, 2461 EISENHOWER AVE 2ND FL, ALEXANDRIA, VA 22314,
-          EIN: 92-1915834 © 2016–2026 MUSLIMS AROUND THE WORLD PROJECT (MATW)
-        </p>
+        <p className="text-center text-lg text-[#aaa]">{f.copyright}</p>
       </div>
     </footer>
   );

@@ -29,6 +29,20 @@ out of scope for this build.)
   ("gotcha") is substituted with Dancing Script.
 - Currency defaults to **USD** for the US site (the saved snapshot showed GBP).
 
+## Localization (English + Spanish)
+
+The site is bilingual:
+- **English** at `/` · **Spanish** at `/es`
+- All copy lives in `lib/content.js` as a per-locale dictionary
+  (`getContent('en' | 'es')`); components are locale-agnostic and receive a
+  `content` object. Spanish strings come from the site's own translation.
+- The header language switcher links English → `/` and Español → `/es`
+  (other languages are listed but not yet translated).
+- `<html lang>` is set per locale.
+
+To add another language: add a locale object to `lib/content.js` and a
+`app/<locale>/page.jsx` that renders `<HomePage content={getContent('<locale>')} locale="<locale>" />`.
+
 ## Donations (Stripe)
 
 Donate buttons use **Stripe Checkout** (hosted, PCI-compliant redirect):
