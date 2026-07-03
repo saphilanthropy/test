@@ -2,6 +2,9 @@
 
 import { useState } from "react";
 import { primaryMenus } from "../lib/siteData";
+import { startCheckout } from "../lib/donate";
+
+const donate = () => startCheckout({ program: "Most Needed Now", frequency: "one_time" });
 
 function Chevron({ className = "" }) {
   return (
@@ -55,7 +58,7 @@ export default function Header() {
             <div className="flex items-center gap-1 text-white">
               <QuickIcon label="Zakat" />
               <span className="px-1"><CartBadge /></span>
-              <a href="/top-10" className="btn-matw h-10">Donate</a>
+              <button type="button" onClick={donate} className="btn-matw h-10">Donate</button>
             </div>
           </div>
 
@@ -108,7 +111,7 @@ export default function Header() {
               </li>
               <li className="flex items-center pl-3">
                 <div className="flex flex-col items-center">
-                  <a href="/top-10" className="btn-matw h-11 px-6 text-[14px]">Donate</a>
+                  <button type="button" onClick={donate} className="btn-matw h-11 px-6 text-[14px]">Donate</button>
                   <a href="tel:+18007182427" className="mt-1 text-[12px] text-white/90">1-800-718-2427</a>
                 </div>
               </li>

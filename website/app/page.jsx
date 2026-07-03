@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import QuickDonateBar from "../components/QuickDonateBar";
 import HeroSlider from "../components/HeroSlider";
+import DonateButton from "../components/DonateButton";
 import { urgentAppeals, getInvolved } from "../lib/siteData";
 
 function AnnouncementBar() {
@@ -44,7 +45,9 @@ function UrgentAppeals() {
                 <p className="flex items-center justify-center text-lg text-[#00a3da] xl:text-xl">{a.title}</p>
                 <p className="my-2 max-h-[78px] overflow-hidden text-sm text-stone-500">{a.desc}</p>
                 <div className="mt-auto flex justify-center">
-                  <a href={a.href} className="btn-matw h-10">{a.cta}</a>
+                  <DonateButton program={a.title} frequency="one_time" className="btn-matw h-10">
+                    {a.cta}
+                  </DonateButton>
                 </div>
                 <div className="mt-2 flex justify-center gap-1 text-xs leading-none">
                   <span className="font-semibold text-[#093686]">{a.donors}</span>

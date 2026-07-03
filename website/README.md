@@ -29,6 +29,31 @@ out of scope for this build.)
   ("gotcha") is substituted with Dancing Script.
 - Currency defaults to **USD** for the US site (the saved snapshot showed GBP).
 
+## Donations (Stripe)
+
+Donate buttons use **Stripe Checkout** (hosted, PCI-compliant redirect):
+- The Quick Donate bar supports **one-time** and **monthly** giving, preset or
+  custom amounts, and a program selector.
+- Header "Donate" and each appeal card's button start a one-time checkout.
+- `app/api/checkout/route.js` creates the Checkout Session; the client is sent
+  to Stripe's hosted page. On completion Stripe redirects to
+  `/donate/success` (or `/donate/cancel`).
+
+### Setup (required to take real donations)
+1. Create a free Stripe account → copy your secret key from
+   https://dashboard.stripe.com/apikeys
+2. `cp .env.example .env.local` and set `STRIPE_SECRET_KEY` (use `sk_test_…`
+   while testing). **`.env.local` is git-ignored — never commit real keys.**
+3. `npm run dev`, click a donate button, and pay with Stripe's test card
+   `4242 4242 4242 4242`, any future expiry, any CVC.
+4. In production, set `STRIPE_SECRET_KEY` (a `sk_live_…` key) in your host's
+   environment variables (e.g. Vercel → Project → Settings → Environment
+   Variables) — not in a committed file.
+
+> Recommended next step: add a **Stripe webhook** (`checkout.session.completed`)
+> to record donations / send receipts server-side. Not required for payments to
+> work, but best practice for a production charity.
+
 ## Run locally
 
 ```bash

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { presetAmounts } from "../lib/siteData";
+import { startCheckout } from "../lib/donate";
 
 const programs = [
   "Most Needed Now",
@@ -16,10 +17,40 @@ export default function QuickDonateBar() {
   const [amount, setAmount] = useState("");
   const [active, setActive] = useState(null);
   const [program, setProgram] = useState(programs[0]);
+  const [frequency, setFrequency] = useState("one_time");
+  const [loading, setLoading] = useState(false);
+
+  const handleDonate = async () => {
+    if (frequency === "monthly" && !amount) {
+      alert("Please choose an amount for a monthly donation.");
+      return;
+    }
+    setLoading(true);
+    await startCheckout({ amount, program, frequency });
+    setLoading(false);
+  };
 
   return (
     <section className="matw-gradient w-full px-3 py-3 md:px-6 md:py-6">
       <div className="mx-auto w-full md:container">
+        {/* One-time / Monthly toggle */}
+        <div className="mb-2 flex justify-center gap-2 lg:justify-start lg:px-2">
+          {[
+            ["one_time", "One-time"],
+            ["monthly", "Monthly"],
+          ].map(([val, label]) => (
+            <button
+              key={val}
+              type="button"
+              onClick={() => setFrequency(val)}
+              className={`rounded-full px-4 py-1 text-sm font-semibold transition-colors ${
+                frequency === val ? "bg-white text-[#093484]" : "bg-white/20 text-white hover:bg-white/30"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
         <div className="grid grid-cols-12 gap-2 lg:grid-cols-[1.5fr_1fr_1.5fr_1fr_1fr] lg:px-2">
           {/* Currency + amount */}
           <div className="order-3 col-span-12 flex h-[42px] items-center rounded-md bg-white md:col-span-5 md:order-1 lg:col-span-1">
@@ -71,7 +102,14 @@ export default function QuickDonateBar() {
 
           {/* Quick donate */}
           <div className="order-5 col-span-6 lg:col-span-1">
-            <button className="btn-matw h-[42px] w-full">Quick Donate</button>
+            <button
+              type="button"
+              onClick={handleDonate}
+              disabled={loading}
+              className={`btn-matw h-[42px] w-full ${loading ? "opacity-70" : ""}`}
+            >
+              {loading ? "Redirecting…" : "Quick Donate"}
+            </button>
           </div>
         </div>
       </div>
