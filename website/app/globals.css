@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --matw-blue: #00a3da;
+  --matw-blue-dark: #093484;
+  --matw-pink: #f60362;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  color: #1c1917;
+  background: #ffffff;
+}
+
+/* Brand gradient used by nav + footer */
+.matw-gradient {
+  background-image: linear-gradient(to right, #00a3da, #093484);
+}
+
+/* Primary pink CTA button (matches the site's Montserrat bold pills) */
+.btn-matw {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border-radius: 0.375rem;
+  padding: 0 1rem;
+  height: 40px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #f60362;
+  transition: background-color 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.btn-matw:hover {
+  background-color: #d80456;
+}
+
+/* Marquee animation for the announcement bar */
+@keyframes matw-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: matw-marquee 22s linear infinite;
+}
+
+/* Image placeholder styling for assets we don't yet have locally */
+.img-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 11px;
+  background-image: linear-gradient(135deg, #00a3da 0%, #093484 100%);
+}
