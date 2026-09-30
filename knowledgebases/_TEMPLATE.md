@@ -8,7 +8,7 @@ Do not edit this template to add real client data — it is the blueprint only.
 
 > **Status:** {active | prospective | dormant | former}
 > **Last refreshed:** {YYYY-MM-DD}
-> **Sources synced:** Gmail · Slack · Asana · QuickBooks
+> **Sources synced:** Gmail · Slack · Asana · Google Drive
 > **Primary domain(s):** {example.org}
 
 ## Profile
@@ -19,7 +19,7 @@ Do not edit this template to add real client data — it is the blueprint only.
 
 ## Activity Timeline (most recent first)
 <!-- Cross-source highlights. Keep to meaningful events, newest at top. -->
-- **{YYYY-MM-DD}** — {event} _(source: Gmail/Slack/Asana/QuickBooks)_
+- **{YYYY-MM-DD}** — {event} _(source: Gmail/Slack/Asana/Drive)_
 
 ## Email — Gmail
 - **Key threads:**
@@ -38,12 +38,9 @@ Do not edit this template to add real client data — it is the blueprint only.
   - {task} — {assignee} — {due date}
 - **Latest status update:** {date} — {summary}
 
-## Financials — QuickBooks
-- **Customer record:** {present? id}
-- **Outstanding balance / AR:** {amount}
-- **Open invoices:**
-  - {invoice #} — {amount} — {due/overdue}
-- **Recent payments:** {date — amount}
+## Documents — Google Drive
+- **Key documents:**
+  - _{title}_ ({type}, last modified {date}) — {1-line description}
 
 ## Open Items & Action Items
 - [ ] {action} — {owner} — {due}
