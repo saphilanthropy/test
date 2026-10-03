@@ -57,14 +57,31 @@ These are hard. The task enforces them.
 
 ## Format defaults
 
+<!--
+These are cross-checked against ENGAGEMENT-RESEARCH.md. Where research and
+Sarah's preference conflict, preference wins — this is her voice, not a
+reach-maximising machine.
+-->
+
 - **Length:** 900–1,600 characters. Shorter usually reads better.
 - **Hook:** first ~200 characters have to work alone — that's the truncation
-  point before "…see more".
+  point before "…see more". Research puts reader drop-off there at 60–70%, which
+  makes this the highest-leverage line in the post.
+- **Cadence:** ~2 posts/week. Reported sweet spot for the nonprofit sector, and
+  fewer-but-denser suits how the algorithm now weights dwell time.
 - **Paragraphs:** short, one idea each, blank line between.
 - **Emoji:** essentially none, unless the archive shows otherwise.
-- **Links:** LinkedIn suppresses reach on posts with external links. Default is
-  no link; first comment if there must be one.
+- **Links:** LinkedIn suppresses reach on posts with external links (~18.8% drop
+  in median reach for a body link). Default is no link; first comment if there
+  must be one.
 - **Sign-off:** none. Posts end on the point, not on a signature.
+
+## After posting — Sarah's job, not the agent's
+
+Replying to comments within the first 30 minutes is associated with ~64% more
+comments and ~2.3x more views. It's the biggest single lever available and no
+drafting tool can do it. Worth only publishing when there's a 20-minute window
+free afterwards.
 
 ## Worked example
 

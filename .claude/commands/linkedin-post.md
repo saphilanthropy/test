@@ -32,6 +32,12 @@ Read these every run, they are the source of truth for voice and repetition:
    matters more than volume here.
 3. `linkedin/ideas.md` — the idea queue.
 
+`linkedin/ENGAGEMENT-RESEARCH.md` holds the evidence behind the format defaults —
+read it when a craft decision is genuinely unclear, or when Sarah questions one
+of the rules. Don't let it override `VOICE.md`: it's reach research, and her
+voice isn't up for optimisation. Note its own warning that several findings are
+contested, and that the archive is better evidence than any of it.
+
 ## Step 2 — Sourcing rules (read this before you write a word)
 
 > **Never source post content from `knowledgebases/`.** Those files are

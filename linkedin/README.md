@@ -9,6 +9,7 @@ approval, and publishes it once approved.
 |---|---|
 | `VOICE.md` | Voice, themes, and the hard "never" list. **Edit this by hand.** |
 | `ideas.md` | Idea queue the task pulls from when run without a topic. |
+| `ENGAGEMENT-RESEARCH.md` | Evidence behind the format defaults, with source quality flagged. |
 | `posts/` | Archive of every post — published, approved, or awaiting approval. |
 | `../.claude/commands/linkedin-post.md` | The task definition itself. |
 
