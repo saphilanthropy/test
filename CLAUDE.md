@@ -24,6 +24,9 @@ apart:
 
 ## The LinkedIn task
 - Run with `/linkedin-post [topic]`. See `linkedin/README.md`.
+- `--carousel` builds a PDF slide deck instead of a text post. Renderer and craft
+  rules in `linkedin/carousel/`; rendered PDFs are gitignored build artefacts,
+  the deck `.md` is the source of truth.
 - It is the **only** task here that writes to an external service. Everything it
   publishes is public and permanent-ish.
 - **Nothing is published without Sarah approving the exact final text**, every

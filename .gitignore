@@ -1,0 +1,4 @@
+# Rendered carousels are build artefacts — the deck .md is the source of truth
+# and regenerates them. Keeping PDFs and PNGs in git just bloats the history.
+linkedin/carousel/*.pdf
+linkedin/carousel/previews/

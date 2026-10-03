@@ -13,12 +13,17 @@ publish a revision she hasn't seen. Everything else here is craft; this is the
 line.
 
 ## Inputs
-Invoked as `/linkedin-post [topic or link]`.
+Invoked as `/linkedin-post [topic or link] [--carousel]`.
 
 - **Topic given** → write about that.
 - **No topic given** → open `linkedin/ideas.md`, pick the strongest unused idea
   (top of the queue unless something else is clearly more timely), and say which
   one you picked and why before drafting.
+- **`--carousel`** → build a slide deck instead of a text-only post. See
+  **Carousels** below; Steps 1–2 and the approval gate apply unchanged. Don't
+  pick this mode on your own — a carousel is more of Sarah's time to review and
+  can't be published in one click. Suggest it when a topic is genuinely
+  list-shaped or sequential, and let her choose.
 - **Queue empty and no topic** → don't invent a topic from thin air. Offer 3–4
   angles drawn from Sarah's stated themes in `linkedin/VOICE.md` and ask her to
   pick.
@@ -150,6 +155,46 @@ at runtime rather than assuming:
 
 Post exactly the approved text. Not a tightened version, not a fixed typo you
 spotted on the way — the approved text.
+
+## Carousels (`--carousel`)
+
+A carousel is a PDF document post, not a different flavour of text. Read
+`linkedin/carousel/README.md` for the deck format and the craft rules, and
+`linkedin/carousel/EXAMPLE.md` for a worked deck.
+
+Steps 1, 2 and 4 apply unchanged — the sourcing wall and the self-check matter
+exactly as much here. What changes:
+
+**Drafting.** Write two things, not one:
+1. The **deck** — `linkedin/carousel/<slug>.md`, 8–12 slides, one idea each.
+   Slide 1 is the thumbnail and carries the whole gamble; the last slide asks for
+   something.
+2. The **accompanying post text** — a carousel still appears in the feed above
+   the document, and that text still needs its own ~200-character hook. Don't
+   write a strong deck and throw away the commentary.
+
+**Rendering.** Run it and read the output:
+```bash
+node linkedin/carousel/render.mjs linkedin/carousel/<slug>.md
+```
+A non-zero exit means a slide overflows and is being clipped. **Fix the text and
+re-render** — never hand Sarah a deck that failed its own check, and never
+"solve" overflow by shrinking type. Cut words.
+
+**Approval.** Step 5 applies, with more to show: the accompanying post text
+verbatim, the slide-by-slide content as plain text so she can read it without
+opening anything, and the rendered PNG previews. She approves the deck *and* the
+post text. Then wait, as always.
+
+**Publishing.** Document posts are a different API path from text shares and
+Zapier's standard LinkedIn action does not upload binaries. Assume the PDF goes
+up **by hand** unless a route is actually confirmed in the moment. Hand her the
+PDF path and the approved post text, and say plainly that the upload is hers.
+Don't dress a manual handoff up as publishing.
+
+**Archive.** Per Step 7, plus: keep the deck `.md` next to the post record and
+note the rendered PDF's path. Keep the deck source in git — the PDF is a build
+artefact and can always be regenerated.
 
 ## Step 7 — Archive
 Every post, published or not, gets a file: `linkedin/posts/YYYY-MM-DD-<slug>.md`

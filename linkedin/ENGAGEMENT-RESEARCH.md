@@ -133,9 +133,12 @@ Checked against `VOICE.md` and `.claude/commands/linkedin-post.md`:
 **Worth changing:**
 - **Cadence target: ~2 posts/week.** Sector sweet spot, and it suits a drafting
   workflow with a human approval gate.
-- **Test document carousels.** Currently the agent only writes text posts. The
-  reach case is strong enough to try, even though text-only may win for an
-  established personal voice. Worth 3–4 experiments before concluding.
+- **Document carousels — now built** (`--carousel`, see `carousel/README.md`).
+  The reach case was strong enough to try. It is *not* settled that they beat
+  text-only for an established personal voice, so treat the first 3–4 as
+  experiments and compare against text posts in the archive before concluding.
+  Note also that nonprofit-specific data favours photos (3.4%), which sits
+  awkwardly against the general carousel finding — another reason to test.
 - **Reconsider the "no emoji / no hashtag spray" strictness?** No — leave it.
   Nothing in this research contradicts it, and it's a voice decision, not a
   reach decision.

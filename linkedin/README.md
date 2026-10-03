@@ -10,6 +10,7 @@ approval, and publishes it once approved.
 | `VOICE.md` | Voice, themes, and the hard "never" list. **Edit this by hand.** |
 | `ideas.md` | Idea queue the task pulls from when run without a topic. |
 | `ENGAGEMENT-RESEARCH.md` | Evidence behind the format defaults, with source quality flagged. |
+| `carousel/` | Deck renderer (markdown → PDF) and the carousel craft rules. |
 | `posts/` | Archive of every post — published, approved, or awaiting approval. |
 | `../.claude/commands/linkedin-post.md` | The task definition itself. |
 
@@ -19,6 +20,7 @@ approval, and publishes it once approved.
 /linkedin-post                          # pulls the top idea from ideas.md
 /linkedin-post the trouble with restricted funding
 /linkedin-post https://example.org/report   # react to something
+/linkedin-post --carousel restricted funding   # slide deck instead of text
 ```
 
 It drafts, shows the exact final text, and **waits**. Nothing is published until
